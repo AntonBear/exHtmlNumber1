@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
 }
 
+:root {
+  --black-color-font: black;
+  --font-weight-700: 700;
+}
+
 body {
   background-color: #69b99d;
   display: flex;
@@ -33,25 +38,28 @@ body {
   justify-content: space-between;
   flex: 1;
 }
-.ul {
-  /* display: inline-block; */
+.nav-ul {
   display: flex;
   flex: 0.33;
   justify-content: space-between;
+}
+
+.nav-ul li {
+  list-style-type: none; /* Убираем маркеры */
 }
 
 .traine-me {
   display: inline-block;
   font-size: 22px;
   font-family: 'Inter';
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   color: #89c5cc;
 }
 
-.Home {
+.home {
   font-family: 'Mulish', sans-serif;
-  font-weight: 700;
-  color: black;
+  font-weight: var(--font-weight-700);
+  color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
 }
@@ -59,18 +67,18 @@ body {
 .home:hover {
 }
 
-.About {
+.about {
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
-  color: black;
+  color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
 }
 
-.Training {
+.training {
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
-  color: black;
+  color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
 }
@@ -78,11 +86,10 @@ body {
 .main-section {
   display: flex;
   padding-left: 7%;
-  /* margin-top: 6%; */
   padding-right: 7%;
 }
 
-.girl {
+.girl-image {
   z-index: 0;
   align-self: flex-start;
   margin-left: auto;
@@ -90,16 +97,11 @@ body {
   aspect-ratio: auto;
 }
 
-/* .ratio {
-  aspect-ratio: 1 / 16;
-} */
-
-.title {
-  /* align-self: center; */
+.column {
   margin-top: 102px;
 }
 
-.text {
+.slogan {
   font-family: 'Mulish', sans-serif;
   font-size: 48px;
   font-weight: 200;
@@ -108,7 +110,7 @@ body {
   z-index: 1;
 }
 
-.text-2 {
+.desc {
   font-family: 'Open Sans', sans-serif;
   color: #7d7987;
   font-size: 16px;
@@ -119,29 +121,24 @@ body {
 
 .mulish-font {
   font-family: 'Mulish', sans-serif;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   text-transform: uppercase;
   color: #89c5cc;
 }
 
-.Open_Sans-font {
+.open-sans-font {
   font-family: 'Open Sans', sans-serif;
   color: #7d7987;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   line-height: 26px;
 }
-
-/* path4 */
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 14px 32px 15px; */
-  padding: 14px 32px;
-
-  /* gap: 8px; */
+  padding: 14px 32px 15px;
   background: #69b99d;
   border-radius: 4px;
   border-color: #69b99d;
@@ -149,23 +146,21 @@ body {
   overflow: hidden;
 }
 
-button:before {
-  /* font-family: FontAwesome; */
+.btn:before {
   content: url('../img/label.svg');
   position: relative;
   left: -52px;
   transition: all 200ms ease;
 }
-button:hover:before {
+.btn:hover:before {
   left: -5px;
 }
 
-#label {
+.label {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
-  /* display: inline; */
 }
 
 .footer-wrapper {
@@ -175,7 +170,7 @@ button:hover:before {
 .footer {
   flex: 1;
   text-align: center;
-  color: #000000;
+  color: var(--black-color-font);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -184,11 +179,14 @@ button:hover:before {
   margin-top: 45px;
 }
 
-/* send us a message @treine.me */
-#footer_span {
+.footer-email {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
+  color: var(--black-color-font);
+}
+.footer a {
+  text-decoration: none;
 }
 
 .balls-decoration {

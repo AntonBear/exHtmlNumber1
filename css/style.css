@@ -14,7 +14,6 @@ body {
 
 :root {
   --black-color-font: black;
-  --font-weight-700: 700;
 }
 
 body {
@@ -52,13 +51,13 @@ body {
   display: inline-block;
   font-size: 22px;
   font-family: 'Inter';
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   color: #89c5cc;
 }
 
 .home {
   font-family: 'Mulish', sans-serif;
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
@@ -121,7 +120,7 @@ body {
 
 .mulish-font {
   font-family: 'Mulish', sans-serif;
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   text-transform: uppercase;
   color: #89c5cc;
 }
@@ -130,7 +129,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #7d7987;
   font-size: 16px;
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   line-height: 26px;
 }
 
@@ -182,7 +181,7 @@ body {
 .footer-email {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  font-weight: var(--font-weight-700);
+  font-weight: 700;
   color: var(--black-color-font);
 }
 .footer a {

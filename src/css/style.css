@@ -56,6 +56,9 @@ body {
   display: inline-block;
 }
 
+.home:hover {
+}
+
 .About {
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
@@ -135,15 +138,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 32px 15px;
-  gap: 8px;
-  /* position: absolute; */
-  /* left: 120px;
-  top: 486px; */
+  /* padding: 14px 32px 15px; */
+  padding: 14px 32px;
+
+  /* gap: 8px; */
   background: #69b99d;
   border-radius: 4px;
   border-color: #69b99d;
   margin-top: 48px;
+  overflow: hidden;
+}
+
+button:before {
+  /* font-family: FontAwesome; */
+  content: url('../img/label.svg');
+  position: relative;
+  left: -52px;
+  transition: all 200ms ease;
+}
+button:hover:before {
+  left: -5px;
 }
 
 #label {
@@ -151,7 +165,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
-  display: inline-flex;
+  /* display: inline; */
 }
 
 .footer-wrapper {

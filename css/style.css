@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  flex: 0.6;
+  flex: 0.66666666;
   display: flex;
   justify-content: center;
   margin-top: 7%;

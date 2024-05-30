@@ -27,7 +27,9 @@ body {
 
 .container {
   flex: 0.66666666;
-  height: 75%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  /* height: 75%; */
   background-color: #ffffff;
 }
 

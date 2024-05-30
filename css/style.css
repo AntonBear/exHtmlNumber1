@@ -59,12 +59,20 @@ body {
   color: #89c5cc;
 }
 
+.traine-me:hover {
+  text-decoration: underline;
+}
+
 .home {
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
   color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
+}
+
+.home:hover {
+  text-decoration: underline;
 }
 
 .about {
@@ -74,6 +82,9 @@ body {
   font-size: 18px;
   display: inline-block;
 }
+.about:hover {
+  text-decoration: underline;
+}
 
 .training {
   font-family: 'Mulish', sans-serif;
@@ -81,6 +92,10 @@ body {
   color: var(--black-color-font);
   font-size: 18px;
   display: inline-block;
+}
+
+.training:hover {
+  text-decoration: underline;
 }
 
 .main-section {

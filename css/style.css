@@ -1,45 +1,43 @@
-@import url('adaptive.css');
+/* @import url('adaptive.css'); */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* html, */
-body {
-  height: 100%;
-  margin: 0;
-  /* min-height: 100%; */
-  min-height: 100vh;
-}
-
 :root {
   --black-color-font: black;
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  min-height: 100vh;
   background-color: #69b99d;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .container {
-  flex: 0.66666666;
+  flex: 0.666666;
+  display: flex;
+  justify-content: center;
   margin-top: 7%;
   margin-bottom: 7%;
-  /* height: 75%; */
   background-color: #ffffff;
 }
 
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  margin: 64px 0px 0px 0px;
+}
+
 .nav {
-  padding-top: 5%;
-  padding-left: 7%;
-  padding-right: 7%;
   display: flex;
   justify-content: space-between;
-  flex: 1;
 }
 .nav-ul {
   display: flex;
@@ -48,7 +46,7 @@ body {
 }
 
 .nav-ul li {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none;
 }
 
 .traine-me {
@@ -98,14 +96,12 @@ body {
   text-decoration: underline;
 }
 
-.main-section {
+.main {
   display: flex;
-  padding-left: 7%;
-  padding-right: 7%;
-  justify-content: center;
+  flex: 1 1 auto;
 }
+
 .column {
-  /* margin-top: 102px; */
   margin-top: 10%;
   margin-right: auto;
 }
@@ -121,8 +117,11 @@ body {
 .ratio {
   align-self: flex-start;
   /* margin-left: auto; */
-  height: 500px;
-  aspect-ratio: auto;
+  /* height: 500px; */
+  flex-basis: 500px; /* Начальная ширина */
+  flex-shrink: 1; /* Может сжиматься */
+
+  /* aspect-ratio: auto; */
 }
 
 .slogan {
@@ -168,6 +167,12 @@ body {
   border-color: #69b99d;
   margin-top: 48px;
   overflow: hidden;
+
+  /* Style for Statr now*/
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .btn:before {
@@ -180,27 +185,18 @@ body {
   left: -5px;
 }
 
-.label {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.footer-wrapper {
-  display: flex;
-}
-
 .footer {
-  flex: 1;
-  text-align: center;
+  display: flex;
+  margin-top: 45px;
+}
+
+.send-us-a-message {
   color: var(--black-color-font);
   font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  justify-self: center;
-  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .footer-email {
@@ -208,12 +204,15 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: var(--black-color-font);
-}
-.footer a {
   text-decoration: none;
 }
 
 .balls-decoration {
   /* display: block; */
   margin-left: auto;
+  right: -50px;
+
+  /* justify-self: end; */
+  /* position: relative;
+  right: -120px; */
 }

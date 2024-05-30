@@ -187,7 +187,8 @@ body {
 
 .footer {
   display: flex;
-  margin-top: 45px;
+  /* margin-top: 90px; */
+  padding-top: 90px;
 }
 
 .send-us-a-message {
@@ -196,7 +197,6 @@ body {
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .footer-email {
@@ -209,8 +209,9 @@ body {
 
 .balls-decoration {
   /* display: block; */
+  position: relative;
   margin-left: auto;
-  right: -50px;
+  right: -80px;
 
   /* justify-self: end; */
   /* position: relative;
